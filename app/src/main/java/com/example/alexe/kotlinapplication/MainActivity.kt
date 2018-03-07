@@ -31,7 +31,7 @@ import com.example.alexe.kotlinapplication.template.TemplateActivity
         recyclerView.layoutManager = linearLayoutManager
 
         val patternList = arrayListOf<PatternItem>(PatternItem("Decorator"),
-                PatternItem("Template"))
+                PatternItem("Template"), PatternItem("Strategy"))
 
         val customAdapter = CustomAdapter(patternList, this)
 
