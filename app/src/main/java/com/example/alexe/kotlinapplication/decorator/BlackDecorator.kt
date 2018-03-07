@@ -1,9 +1,11 @@
 package com.example.alexe.kotlinapplication.decorator
 
+import android.util.Log
+
 /**
  * Created by alexe on 3/6/18.
  */
-class BlackDecorator(var shapeDecorator: ShapeDecorator) : ShapeDecorator(shapeDecorator) {
+class BlackDecorator(var shapeDecorator: Shape) : ShapeDecorator(shapeDecorator) {
 
     override fun draw() {
         shapeDecorator.draw();
@@ -11,7 +13,7 @@ class BlackDecorator(var shapeDecorator: ShapeDecorator) : ShapeDecorator(shapeD
 
     }
 
-    private fun setRedBorder(shapeDecorator: ShapeDecorator) {
-        println("Black border added")
+    private fun setRedBorder(shapeDecorator: Shape) {
+        Log.d("PATTERN_DECORATOR", "Black border added")
     }
 }

@@ -1,5 +1,7 @@
 package com.example.alexe.kotlinapplication.decorator
 
+import android.util.Log
+
 /**
  * Created by alexe on 3/6/18.
  */
@@ -12,6 +14,6 @@ class RedDecorator (var shapeDecorator: Shape) : ShapeDecorator(shapeDecorator) 
     }
 
     private fun setRedBorder(shapeDecorator: Shape) {
-        println("Red border added")
+        Log.d("PATTERN_DECORATOR", "Red border added")
     }
 }

@@ -8,13 +8,17 @@ class DecoratorActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_decorator)
 
         var circle = Cirlce()
 
         var redCirle = RedDecorator(Cirlce())
 
+        var blackCircle = BlackDecorator(Cirlce())
 
+        circle.draw()
+        redCirle.draw()
+        blackCircle.draw()
 
     }
 }
